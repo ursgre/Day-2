@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8"/>
+    <title>HTML Cz.2</title>
+    <style>
+       #naglowek {
+  background-color: rgb(132, 203, 226);
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style all elements with the class name "city" */
+.miasto {
+  background-color: rgb(255, 238, 4);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+.tytul {
+    text-align: center;
+}
+    </style>
+    </head>
+    <body>
+     <h1 id="naglowek">Dzień 2</h1>
+
+     <h2 class="miasto">Berlin</h2>
+     <p>Berlin jest stolicą Niemiec.</p>
+     
+     <h2 class="miasto">Paryż</h2>
+     <p>Paryż jest stolicą Francji.</p>
+     
+     <h2 class="miasto">Warszawa</h2>
+     <p>Warszawa jest stolicą Polski</p>
+
+     <h2 class="miasto">Rosja</h2>
+     <p>Moskwa jest stolicą Rosji</p>
+
+     <h2 class="miasto">Praga</h2>
+     <p>Praga jest stolicą Czech</p>
+
+     <hr>
+
+     <h1 class="tytul">Opisy</h1>
+
+
+     <p><a href="#C3">Przeczytaj o Warszawie</a></p>
+     <p><a href="#C5">Przeczytaj o Pradze</a></p>
+
+     <h2>Berlin</h2>
+    <p>Stolica, największe miasto Niemiec i zarazem kraj związkowy. 
+    Zajmuje powierzchnię ok. 892 km² i zamieszkuje go około 3,7 mln osób. 
+    Jest największym miastem w Unii Europejskiej pod względem liczby mieszkańców. 
+    Berlin jest podzielony na dwanaście okręgów administracyjnych.</p>
+
+    <h2>Paryż</h2>
+    <p>Stolica i największe miasto Francji, położone w centrum Basenu Paryskiego,
+     nad Sekwaną. Stanowi centrum polityczne, ekonomiczne i kulturalne kraju</p>
+
+    <h2 id="C3">Warszawa</h2>
+    <p>Stolica Polski i województwa mazowieckiego, największe miasto w kraju
+     położone w jego centralnej części, na Nizinie Środkowomazowieckiej,
+     na Mazowszu, nad Wisłą.</p>
+
+    <h2>Moskwa</h2>
+    <p>Stolica Rosji i największe miasto tego kraju, położone w Centralnym Okręgu Federalnym.
+     Liczy 12 655 050 mieszkańców, przy czym cała aglomeracja liczy 17,2 mln mieszkańców.</p>
+
+    <h2 id="C5">Praga</h2>
+    <p>Stolica i największe miasto Czech, położone w zachodniej części kraju,
+     w środkowej części krainy Czechy, nad Wełtawą. 
+     Jest miastem wydzielonym na prawach kraju, będąc jednocześnie stolicą kraju środkowoczeskiego.</p>
+
+     <hr>
+
+     <h1 class="tytul">Zdjęcia</h1>
+     
+     <img src="berlin.jpg" alt="Berlin" width="500" height="333">
+
+     <img src="paryz.jpg" alt="Paryż" width="500" height="333">
+
+     <img src="warszawa.jpg" alt="Warszawa" width="500" height="333">
+
+     <img src="moskwa.jpg" alt="Moskwa" width="500" height="333">
+
+     <img src="praga.jpeg" alt="Praga" width="500" height="333">
+
+     <hr>
+
+     <h1 class="tytul">Stolica-garść informacji</h1>
+     <iframe src="https://pl.wikipedia.org/wiki/Stolica" height="300" width="1500" title="Iframe Example"></iframe>
+
+     <hr>
+     <h1 class="tytul">Quiz</h1>
+
+     <p>Sprawdź swoją wiedzę!</p>
+
+    <button type="button" onclick="paryz()">Odpowiedź</button>
+
+    <p id="demo">Nad jaką rzeką leży Paryż?</p>
+
+    <script>
+    function paryz() { 
+  document.getElementById("demo").innerHTML = "Nad Sekwaną.";
+    }
+    </script>
+
+<button type="button" onclick="moskwa()">Odpowiedź</button>
+
+<p id="moskwa">W którym roku moskwa uzyskała prawa miejskie?</p>
+
+<script>
+function moskwa() { 
+document.getElementById("moskwa").innerHTML = "Moskwa uzyskała prawa miejskie w 1147 roku";
+}
+</script>
+
+<button type="button" onclick="praga()">Odpowiedź</button>
+
+<p id="praga">Ile dzielnic ma Praga?</p>
+
+<script>
+function praga() { 
+  document.getElementById("praga").innerHTML = "Praga składa się z 22 dzielnic.";
+}
+</script>
+
+
+
+<p id="napis"></p>
+
+<script>
+document.getElementById("napis").innerHTML = "";
+</script>
+<hr> 
+
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+    </body>
+</html>
