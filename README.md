@@ -1,8 +1,8 @@
 # Tutorial
 GitHub-komendy
-cd C:/
-cd    /
-git init
+1. cd C:/
+2. cd    /
+3. git init
 code .
 git status
 ssh-keygen -t rsa -b 4096 -C "mail"
